@@ -4,6 +4,9 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
-store 1 = Store.create(name: "Burnaby", annual_revenue:300000, carries men_apparel: true, carries women_apparel:true )
-store 1 = Store.create(name: "Richmond", annual_revenue:1260000, carries men_apparel:false , carries women_apparel:true )
-store 1 = Store.create(name: "Gastown", annual_revenue:190000 ,carries men_apparel:true, carries women_apparel:false )
+
+store1 = Store.create(name: "Burnaby", annual_revenue:300000, men_apparel: true, women_apparel:true )
+store2 = Store.create(name: "Richmond", annual_revenue:1260000,  men_apparel:false, women_apparel:true )
+store3 = Store.create(name: "Gastown", annual_revenue:190000, men_apparel:true, women_apparel:false )
+
+puts Store.count(:all)
