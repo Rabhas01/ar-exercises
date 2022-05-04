@@ -10,3 +10,16 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+
+puts "Please enter a store name"
+storeName = gets.chomp
+
+newStore = Store.create(
+    name: storeName
+)
+
+if newStore.valid? == false
+  puts "Error: Please complete the fields"
+  puts newStore.errors.full_messages
+end
